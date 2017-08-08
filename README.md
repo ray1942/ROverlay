@@ -74,10 +74,18 @@
 *文字提示提示
 
 ```
-            ROverlay.showTextOverlay(status: "获取数据失败，请检查您的网络")
+            ROverlay.showTextOverlay(status: "获取数据失败，请检查您的网络”)
 
 ```
 ![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot8.png)
+
+```
+	//其他文字提示方法：
+ 	ROverlay.showTextOverlay(status: String, duration: Double)
+        ROverlay.showTextOverlay(status: String, fontColor: UIColor, duration: Double)
+        ROverlay.showTextOverlay(status: String, fontColor: UIColor)
+
+```
 
 *显示菊花效果，自定义标题，标题颜色和图标颜色
 
@@ -89,6 +97,8 @@
 ![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot9.png)
 
 *让菊花们隐藏的方法
+
+如果是文字提示的话会自动隐藏，默认时间1s
 
 ```
 //默认方式
