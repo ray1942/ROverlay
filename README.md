@@ -69,7 +69,7 @@
             ROverlay.showSuccessOverlay()
 
 ```
-![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot0.png)
+![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot8.png)
 
 *文字提示提示
 
@@ -77,7 +77,7 @@
             ROverlay.showTextOverlay(status: "获取数据失败，请检查您的网络”)
 
 ```
-![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot8.png)
+![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot0.png)
 
 ```
 	//其他文字提示方法：
@@ -112,4 +112,5 @@
 ```
 
 代码里还有更多自定义效果的方法，请查看代码，多多指教😊。
+如果有什么问题，请邮件📧联系我：ray_1942@icloud.com
 
