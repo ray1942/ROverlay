@@ -8,76 +8,85 @@
 
 ###使用姿势
 *默认显示效果：
-
-![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot1.png)
-
 ```
             ROverlay.showOverlay()
 
 ```
-*一个⭕️圈圈 模糊—>清晰->模糊
-![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot2.png)
+![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot1.png)
 
+
+*一个⭕️圈圈 模糊—>清晰->模糊
 ```
             ROverlay.showBlurOverlay()
 
 ```
+![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot2.png)
+
+
 *旋转的正方形
-![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot3.png)
 
 ```
             ROverlay.showSquareOverlay()
 
 ```
+![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot3.png)
+
 *旋转的叶子
-![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot4.png)
 
 ```
             ROverlay.showLeafOverlay()
 
 ```
+![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot4.png)
+
 *信息提示
-![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot5.png)
 
 ```
             ROverlay.showInfoOverlay()
 
 ```
+![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot5.png)
+
 *错误提示❌
-![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot6.png)
 
 ```
             ROverlay.showErrorOverlay()
 
 ```
+![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot6.png)
+
 *警告⚠️
-![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot7.png)
 
 ```
             ROverlay.showWarningOverlay()
 
 ```
+![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot7.png)
+
 *成功提示
-![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot8.png)
 
 ```
             ROverlay.showSuccessOverlay()
 
 ```
+![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot0.png)
+
 *文字提示提示
-![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot8.png)
 
 ```
             ROverlay.showTextOverlay(status: "获取数据失败，请检查您的网络")
 
 ```
+![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot8.png)
+
 *显示菊花效果，自定义标题，标题颜色和图标颜色
-![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot9.png)
 
 ```
             ROverlay.showOverlay(status: String, fontColor: UIColor, iconColor: UIColor)
 
 ```
+
+![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot9.png)
 
 *让菊花们隐藏的方法
 
