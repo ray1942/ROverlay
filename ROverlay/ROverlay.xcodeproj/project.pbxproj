@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		184641191F394FFB00FED3E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184641181F394FFB00FED3E4 /* AppDelegate.swift */; };
+		1846411B1F394FFB00FED3E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1846411A1F394FFB00FED3E4 /* ViewController.swift */; };
+		1846411E1F394FFB00FED3E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1846411C1F394FFB00FED3E4 /* Main.storyboard */; };
+		184641201F394FFB00FED3E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1846411F1F394FFB00FED3E4 /* Assets.xcassets */; };
+		184641231F394FFB00FED3E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184641211F394FFB00FED3E4 /* LaunchScreen.storyboard */; };
+		1846412E1F394FFB00FED3E4 /* ROverlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1846412D1F394FFB00FED3E4 /* ROverlayTests.swift */; };
+		184641391F394FFB00FED3E4 /* ROverlayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184641381F394FFB00FED3E4 /* ROverlayUITests.swift */; };
+		1846414C1F39505800FED3E4 /* ROverlay.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 184641491F39505800FED3E4 /* ROverlay.bundle */; };
+		1846414D1F39505800FED3E4 /* ROverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1846414A1F39505800FED3E4 /* ROverlay.swift */; };
+		1846414E1F39505800FED3E4 /* ROverlayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1846414B1F39505800FED3E4 /* ROverlayInfo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1846412A1F394FFB00FED3E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1846410D1F394FFB00FED3E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 184641141F394FFB00FED3E4;
+			remoteInfo = ROverlay;
+		};
+		184641351F394FFB00FED3E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1846410D1F394FFB00FED3E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 184641141F394FFB00FED3E4;
+			remoteInfo = ROverlay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		184641151F394FFB00FED3E4 /* ROverlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ROverlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		184641181F394FFB00FED3E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1846411A1F394FFB00FED3E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1846411D1F394FFB00FED3E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1846411F1F394FFB00FED3E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		184641221F394FFB00FED3E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		184641241F394FFB00FED3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184641291F394FFB00FED3E4 /* ROverlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ROverlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1846412D1F394FFB00FED3E4 /* ROverlayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROverlayTests.swift; sourceTree = "<group>"; };
+		1846412F1F394FFB00FED3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184641341F394FFB00FED3E4 /* ROverlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ROverlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		184641381F394FFB00FED3E4 /* ROverlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROverlayUITests.swift; sourceTree = "<group>"; };
+		1846413A1F394FFB00FED3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184641491F39505800FED3E4 /* ROverlay.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ROverlay.bundle; path = ROverlay/ROverlay.bundle; sourceTree = "<group>"; };
+		1846414A1F39505800FED3E4 /* ROverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ROverlay.swift; path = ROverlay/ROverlay.swift; sourceTree = "<group>"; };
+		1846414B1F39505800FED3E4 /* ROverlayInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ROverlayInfo.swift; path = ROverlay/ROverlayInfo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		184641121F394FFB00FED3E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184641261F394FFB00FED3E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184641311F394FFB00FED3E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1846410C1F394FFB00FED3E4 = {
+			isa = PBXGroup;
+			children = (
+				184641171F394FFB00FED3E4 /* ROverlay */,
+				1846412C1F394FFB00FED3E4 /* ROverlayTests */,
+				184641371F394FFB00FED3E4 /* ROverlayUITests */,
+				184641161F394FFB00FED3E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		184641161F394FFB00FED3E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				184641151F394FFB00FED3E4 /* ROverlay.app */,
+				184641291F394FFB00FED3E4 /* ROverlayTests.xctest */,
+				184641341F394FFB00FED3E4 /* ROverlayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		184641171F394FFB00FED3E4 /* ROverlay */ = {
+			isa = PBXGroup;
+			children = (
+				184641481F39504C00FED3E4 /* ROverlay */,
+				184641181F394FFB00FED3E4 /* AppDelegate.swift */,
+				1846411A1F394FFB00FED3E4 /* ViewController.swift */,
+				1846411C1F394FFB00FED3E4 /* Main.storyboard */,
+				1846411F1F394FFB00FED3E4 /* Assets.xcassets */,
+				184641211F394FFB00FED3E4 /* LaunchScreen.storyboard */,
+				184641241F394FFB00FED3E4 /* Info.plist */,
+			);
+			path = ROverlay;
+			sourceTree = "<group>";
+		};
+		1846412C1F394FFB00FED3E4 /* ROverlayTests */ = {
+			isa = PBXGroup;
+			children = (
+				1846412D1F394FFB00FED3E4 /* ROverlayTests.swift */,
+				1846412F1F394FFB00FED3E4 /* Info.plist */,
+			);
+			path = ROverlayTests;
+			sourceTree = "<group>";
+		};
+		184641371F394FFB00FED3E4 /* ROverlayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				184641381F394FFB00FED3E4 /* ROverlayUITests.swift */,
+				1846413A1F394FFB00FED3E4 /* Info.plist */,
+			);
+			path = ROverlayUITests;
+			sourceTree = "<group>";
+		};
+		184641481F39504C00FED3E4 /* ROverlay */ = {
+			isa = PBXGroup;
+			children = (
+				184641491F39505800FED3E4 /* ROverlay.bundle */,
+				1846414A1F39505800FED3E4 /* ROverlay.swift */,
+				1846414B1F39505800FED3E4 /* ROverlayInfo.swift */,
+			);
+			name = ROverlay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		184641141F394FFB00FED3E4 /* ROverlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1846413D1F394FFB00FED3E4 /* Build configuration list for PBXNativeTarget "ROverlay" */;
+			buildPhases = (
+				184641111F394FFB00FED3E4 /* Sources */,
+				184641121F394FFB00FED3E4 /* Frameworks */,
+				184641131F394FFB00FED3E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ROverlay;
+			productName = ROverlay;
+			productReference = 184641151F394FFB00FED3E4 /* ROverlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		184641281F394FFB00FED3E4 /* ROverlayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184641401F394FFB00FED3E4 /* Build configuration list for PBXNativeTarget "ROverlayTests" */;
+			buildPhases = (
+				184641251F394FFB00FED3E4 /* Sources */,
+				184641261F394FFB00FED3E4 /* Frameworks */,
+				184641271F394FFB00FED3E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1846412B1F394FFB00FED3E4 /* PBXTargetDependency */,
+			);
+			name = ROverlayTests;
+			productName = ROverlayTests;
+			productReference = 184641291F394FFB00FED3E4 /* ROverlayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		184641331F394FFB00FED3E4 /* ROverlayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184641431F394FFB00FED3E4 /* Build configuration list for PBXNativeTarget "ROverlayUITests" */;
+			buildPhases = (
+				184641301F394FFB00FED3E4 /* Sources */,
+				184641311F394FFB00FED3E4 /* Frameworks */,
+				184641321F394FFB00FED3E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				184641361F394FFB00FED3E4 /* PBXTargetDependency */,
+			);
+			name = ROverlayUITests;
+			productName = ROverlayUITests;
+			productReference = 184641341F394FFB00FED3E4 /* ROverlayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1846410D1F394FFB00FED3E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ray;
+				TargetAttributes = {
+					184641141F394FFB00FED3E4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5LMTENUYDQ;
+						ProvisioningStyle = Automatic;
+					};
+					184641281F394FFB00FED3E4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5LMTENUYDQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 184641141F394FFB00FED3E4;
+					};
+					184641331F394FFB00FED3E4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5LMTENUYDQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 184641141F394FFB00FED3E4;
+					};
+				};
+			};
+			buildConfigurationList = 184641101F394FFB00FED3E4 /* Build configuration list for PBXProject "ROverlay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1846410C1F394FFB00FED3E4;
+			productRefGroup = 184641161F394FFB00FED3E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				184641141F394FFB00FED3E4 /* ROverlay */,
+				184641281F394FFB00FED3E4 /* ROverlayTests */,
+				184641331F394FFB00FED3E4 /* ROverlayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		184641131F394FFB00FED3E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184641231F394FFB00FED3E4 /* LaunchScreen.storyboard in Resources */,
+				184641201F394FFB00FED3E4 /* Assets.xcassets in Resources */,
+				1846411E1F394FFB00FED3E4 /* Main.storyboard in Resources */,
+				1846414C1F39505800FED3E4 /* ROverlay.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184641271F394FFB00FED3E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184641321F394FFB00FED3E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		184641111F394FFB00FED3E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1846411B1F394FFB00FED3E4 /* ViewController.swift in Sources */,
+				1846414E1F39505800FED3E4 /* ROverlayInfo.swift in Sources */,
+				1846414D1F39505800FED3E4 /* ROverlay.swift in Sources */,
+				184641191F394FFB00FED3E4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184641251F394FFB00FED3E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1846412E1F394FFB00FED3E4 /* ROverlayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184641301F394FFB00FED3E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184641391F394FFB00FED3E4 /* ROverlayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1846412B1F394FFB00FED3E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 184641141F394FFB00FED3E4 /* ROverlay */;
+			targetProxy = 1846412A1F394FFB00FED3E4 /* PBXContainerItemProxy */;
+		};
+		184641361F394FFB00FED3E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 184641141F394FFB00FED3E4 /* ROverlay */;
+			targetProxy = 184641351F394FFB00FED3E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1846411C1F394FFB00FED3E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1846411D1F394FFB00FED3E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		184641211F394FFB00FED3E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184641221F394FFB00FED3E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1846413B1F394FFB00FED3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1846413C1F394FFB00FED3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1846413E1F394FFB00FED3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5LMTENUYDQ;
+				INFOPLIST_FILE = ROverlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ray.ROverlay.ROverlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1846413F1F394FFB00FED3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5LMTENUYDQ;
+				INFOPLIST_FILE = ROverlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ray.ROverlay.ROverlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		184641411F394FFB00FED3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5LMTENUYDQ;
+				INFOPLIST_FILE = ROverlayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ray.ROverlay.ROverlayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ROverlay.app/ROverlay";
+			};
+			name = Debug;
+		};
+		184641421F394FFB00FED3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5LMTENUYDQ;
+				INFOPLIST_FILE = ROverlayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ray.ROverlay.ROverlayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ROverlay.app/ROverlay";
+			};
+			name = Release;
+		};
+		184641441F394FFB00FED3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5LMTENUYDQ;
+				INFOPLIST_FILE = ROverlayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ray.ROverlay.ROverlayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ROverlay;
+			};
+			name = Debug;
+		};
+		184641451F394FFB00FED3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5LMTENUYDQ;
+				INFOPLIST_FILE = ROverlayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ray.ROverlay.ROverlayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ROverlay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		184641101F394FFB00FED3E4 /* Build configuration list for PBXProject "ROverlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1846413B1F394FFB00FED3E4 /* Debug */,
+				1846413C1F394FFB00FED3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1846413D1F394FFB00FED3E4 /* Build configuration list for PBXNativeTarget "ROverlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1846413E1F394FFB00FED3E4 /* Debug */,
+				1846413F1F394FFB00FED3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		184641401F394FFB00FED3E4 /* Build configuration list for PBXNativeTarget "ROverlayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184641411F394FFB00FED3E4 /* Debug */,
+				184641421F394FFB00FED3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		184641431F394FFB00FED3E4 /* Build configuration list for PBXNativeTarget "ROverlayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184641441F394FFB00FED3E4 /* Debug */,
+				184641451F394FFB00FED3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1846410D1F394FFB00FED3E4 /* Project object */;
+}
