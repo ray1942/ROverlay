@@ -254,8 +254,8 @@ class ROverlay: UIView {
     static public func showOverlay(status: String){
         ROverlay.showOverlay(status: status,fontColor: OVERLAY_LABEL_FONT_COLOR ,iconColor: OVERLAY_ACTIVITY_DEFAULT_COLOR)
     }
-    static public func showOverlay(fontColor: UIColor, iconColor: UIColor){
-        ROverlay.showOverlay(status: "",fontColor: OVERLAY_LABEL_FONT_COLOR ,iconColor: OVERLAY_ACTIVITY_DEFAULT_COLOR)
+    static public func showOverlay(iconColor: UIColor){
+        ROverlay.showOverlay(status: "",fontColor: OVERLAY_LABEL_FONT_COLOR ,iconColor: iconColor)
     }
     static public func showOverlay(status: String,fontColor: UIColor, iconColor: UIColor){
         OVERLAY_ACTIVITY_DEFAULT_COLOR = iconColor
@@ -446,13 +446,13 @@ class ROverlay: UIView {
     static public func hideOverlay() {
         shared.overlayHide(finishedClosure: nil)
     }
-    static public func hideOverlayWithClosure(){
-        if shared.completionClosure != nil {
-            shared.overlayHide(finishedClosure: shared.completionClosure)
-        }else{
-            shared.overlayHide(finishedClosure: nil)
-        }
-    }
+//    static public func hideOverlayWithClosure(){
+//        if shared.completionClosure != nil {
+//            shared.overlayHide(finishedClosure: shared.completionClosure)
+//        }else{
+//            shared.overlayHide(finishedClosure: nil)
+//        }
+//    }
     static public func hideOverlay(_ finished: @escaping ((Bool)->(Void))){
         shared.overlayHide(finishedClosure: finished)
     }
