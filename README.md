@@ -8,6 +8,7 @@
 
 默认显示效果：
 
+![RAOverlay](https://github.com/ray1942/ROverlay/blob/master/screenshot1.png)
 
 
 ```
