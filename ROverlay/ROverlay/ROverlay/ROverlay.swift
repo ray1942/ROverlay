@@ -254,23 +254,23 @@ class ROverlay: UIView {
     static public func showOverlay(status: String){
         ROverlay.showOverlay(status: status,fontColor: OVERLAY_LABEL_FONT_COLOR ,iconColor: OVERLAY_ACTIVITY_DEFAULT_COLOR)
     }
-    static public func showOverlay(iconColor: UIColor){
-        ROverlay.showOverlay(status: "",fontColor: OVERLAY_LABEL_FONT_COLOR ,iconColor: iconColor)
+    static public func showOverlay(fontColor: UIColor, iconColor: UIColor){
+        ROverlay.showOverlay(status: "",fontColor: OVERLAY_LABEL_FONT_COLOR ,iconColor: OVERLAY_ACTIVITY_DEFAULT_COLOR)
     }
     static public func showOverlay(status: String,fontColor: UIColor, iconColor: UIColor){
         OVERLAY_ACTIVITY_DEFAULT_COLOR = iconColor
         OVERLAY_LABEL_FONT_COLOR = fontColor
-        let options = [ROverlayOptions.ROverlayOptionOpaqueBackground,ROverlayOptions.ROverlayOptionOverlaySizeRoundedRect,ROverlayOptions.ROverlayOptionOverlayTypeActivityDefault]
+        let options = [ROverlayOptions.ROverlayOptionOpaqueBackground,ROverlayOptions.ROverlayOptionOverlaySizeRoundedRect,ROverlayOptions.ROverlayOptionOverlayTypeActivityDefault,.ROverlayOptionAllowUserInteraction]
         shared.didSetOverlayLabelFont = false
         shared.didSetOverlayLabelText = false
         shared.overlayText = status
         shared.analyzeOptions(options: options, hasImage: false, hasImageArray: false)
     }
     
-    
     static public func showLeafOverlay(){
         ROverlay.showLeafOverlay(status: "", fontColor: OVERLAY_LABEL_FONT_COLOR, iconColor: OVERLAY_ACTIVITY_LEAF_COLOR)
     }
+    
     static public func showLeafOverlay(status: String){
         ROverlay.showLeafOverlay(status: status, fontColor: OVERLAY_LABEL_FONT_COLOR, iconColor: OVERLAY_ACTIVITY_LEAF_COLOR)
     }
@@ -280,7 +280,7 @@ class ROverlay: UIView {
     static public func showLeafOverlay(status: String,fontColor: UIColor, iconColor: UIColor){
         OVERLAY_ACTIVITY_LEAF_COLOR = iconColor
         OVERLAY_LABEL_FONT_COLOR = fontColor
-        let options = [ROverlayOptions.ROverlayOptionOpaqueBackground,ROverlayOptions.ROverlayOptionOverlaySizeRoundedRect,ROverlayOptions.ROverlayOptionOverlayTypeActivityLeaf]
+        let options = [ROverlayOptions.ROverlayOptionOpaqueBackground,ROverlayOptions.ROverlayOptionOverlaySizeRoundedRect,ROverlayOptions.ROverlayOptionOverlayTypeActivityLeaf,.ROverlayOptionAllowUserInteraction]
         shared.didSetOverlayLabelFont = false
         shared.didSetOverlayLabelText = false
         shared.overlayText = status
@@ -300,92 +300,13 @@ class ROverlay: UIView {
     static public func showBlurOverlay(status: String,fontColor: UIColor, iconColor: UIColor){
         OVERLAY_ACTIVITY_BLUR_COLOR = iconColor
         OVERLAY_LABEL_FONT_COLOR = fontColor
-        let options = [ROverlayOptions.ROverlayOptionOpaqueBackground,ROverlayOptions.ROverlayOptionOverlaySizeRoundedRect,ROverlayOptions.ROverlayOptionOverlayTypeActivityBlur]
+        let options = [ROverlayOptions.ROverlayOptionOpaqueBackground,ROverlayOptions.ROverlayOptionOverlaySizeRoundedRect,ROverlayOptions.ROverlayOptionOverlayTypeActivityBlur,.ROverlayOptionAllowUserInteraction]
         shared.didSetOverlayLabelFont = false
         shared.didSetOverlayLabelText = false
         shared.overlayText = status
         shared.analyzeOptions(options: options, hasImage: false, hasImageArray: false)
     }
     
-    static public func showErrorOverlay(){
-        let options = [ROverlayOptions.ROverlayOptionOpaqueBackground,ROverlayOptions.ROverlayOptionOverlaySizeRoundedRect,ROverlayOptions.ROverlayOptionOverlayTypeError]
-        shared.didSetOverlayLabelFont = false
-        shared.didSetOverlayLabelText = false
-        shared.overlayText = ""
-        shared.analyzeOptions(options: options, hasImage: false, hasImageArray: false)
-    }
-    static public func showErrorOverlay(status: String){
-        let options = [ROverlayOptions.ROverlayOptionOpaqueBackground,ROverlayOptions.ROverlayOptionOverlaySizeRoundedRect,ROverlayOptions.ROverlayOptionOverlayTypeError]
-        shared.didSetOverlayLabelFont = false
-        shared.didSetOverlayLabelText = false
-        shared.overlayText = status
-        shared.analyzeOptions(options: options, hasImage: false, hasImageArray: false)
-    }
-    
-    static public func showInfoOverlay(){
-        let options = [ROverlayOptions.ROverlayOptionOpaqueBackground,ROverlayOptions.ROverlayOptionOverlaySizeRoundedRect,ROverlayOptions.ROverlayOptionOverlayTypeInfo]
-        shared.didSetOverlayLabelFont = false
-        shared.didSetOverlayLabelText = false
-        shared.overlayText = ""
-        shared.analyzeOptions(options: options, hasImage: false, hasImageArray: false)
-    }
-    static public func showInfoOverlay(status: String){
-        let options = [ROverlayOptions.ROverlayOptionOpaqueBackground,ROverlayOptions.ROverlayOptionOverlaySizeRoundedRect,ROverlayOptions.ROverlayOptionOverlayTypeInfo]
-        shared.didSetOverlayLabelFont = false
-        shared.didSetOverlayLabelText = false
-        shared.overlayText = status
-        shared.analyzeOptions(options: options, hasImage: false, hasImageArray: false)
-    }
-    
-    static public func showSuccessOverlay(){
-        let options = [ROverlayOptions.ROverlayOptionOpaqueBackground,ROverlayOptions.ROverlayOptionOverlaySizeRoundedRect,ROverlayOptions.ROverlayOptionOverlayTypeSuccess]
-        shared.didSetOverlayLabelFont = false
-        shared.didSetOverlayLabelText = false
-        shared.overlayText = ""
-        shared.analyzeOptions(options: options, hasImage: false, hasImageArray: false)
-    }
-    static public func showSuccessOverlay(status: String){
-        let options = [ROverlayOptions.ROverlayOptionOpaqueBackground,ROverlayOptions.ROverlayOptionOverlaySizeRoundedRect,ROverlayOptions.ROverlayOptionOverlayTypeSuccess]
-        shared.didSetOverlayLabelFont = false
-        shared.didSetOverlayLabelText = false
-        shared.overlayText = status
-        shared.analyzeOptions(options: options, hasImage: false, hasImageArray: false)
-    }
-    
-    static public func showWarningOverlay(){
-        let options = [ROverlayOptions.ROverlayOptionOpaqueBackground,ROverlayOptions.ROverlayOptionOverlaySizeRoundedRect,ROverlayOptions.ROverlayOptionOverlayTypeWarning]
-        shared.didSetOverlayLabelFont = false
-        shared.didSetOverlayLabelText = false
-        shared.overlayText = ""
-        shared.analyzeOptions(options: options, hasImage: false, hasImageArray: false)
-    }
-    static public func showWarningOverlay(status: String){
-        let options = [ROverlayOptions.ROverlayOptionOpaqueBackground,ROverlayOptions.ROverlayOptionOverlaySizeRoundedRect,ROverlayOptions.ROverlayOptionOverlayTypeWarning]
-        shared.didSetOverlayLabelFont = false
-        shared.didSetOverlayLabelText = false
-        shared.overlayText = status
-        shared.analyzeOptions(options: options, hasImage: false, hasImageArray: false)
-    }
-    static public func showTextOverlay(status: String){
-       ROverlay.showTextOverlay(status: status, fontColor: OVERLAY_LABEL_FONT_COLOR)
-    }
-    static public func showTextOverlay(status: String, duration: Double){
-        ROverlay.showTextOverlay(status: status, fontColor: OVERLAY_LABEL_FONT_COLOR,duration : duration)
-    }
-    static public func showTextOverlay(status: String, fontColor: UIColor){
-        ROverlay.showTextOverlay(status: status, fontColor: fontColor, duration: 1.0)
-    }
-    static public func showTextOverlay(status: String, fontColor: UIColor,duration: Double){
-        OVERLAY_LABEL_FONT_COLOR = fontColor
-        let options = [ROverlayOptions.ROverlayOptionOpaqueBackground,ROverlayOptions.ROverlayOptionOverlaySizeRoundedRect,ROverlayOptions.ROverlayOptionOverlayTypeText]
-        shared.didSetOverlayLabelFont = false
-        shared.didSetOverlayLabelText = false
-        shared.overlayText = status
-        shared.analyzeOptions(options: options, hasImage: false, hasImageArray: false)
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + duration) {
-            ROverlay.hideOverlay()
-        }
-    }
     
     static public func showSquareOverlay(){
         ROverlay.showSquareOverlay(status: "", fontColor: OVERLAY_ACTIVITY_SQUARE_COLOR, iconColor: OVERLAY_LABEL_FONT_COLOR)
@@ -399,26 +320,18 @@ class ROverlay: UIView {
     static public func showSquareOverlay(status: String,fontColor: UIColor, iconColor: UIColor){
         OVERLAY_ACTIVITY_SQUARE_COLOR = iconColor
         OVERLAY_LABEL_FONT_COLOR = fontColor
-        let options = [ROverlayOptions.ROverlayOptionOpaqueBackground,ROverlayOptions.ROverlayOptionOverlaySizeRoundedRect,ROverlayOptions.ROverlayOptionOverlayTypeActivitySquare]
+        let options = [ROverlayOptions.ROverlayOptionOpaqueBackground,ROverlayOptions.ROverlayOptionOverlaySizeRoundedRect,ROverlayOptions.ROverlayOptionOverlayTypeActivitySquare,.ROverlayOptionAllowUserInteraction]
         shared.didSetOverlayLabelFont = false
         shared.didSetOverlayLabelText = false
         shared.overlayText = status
         shared.analyzeOptions(options: options, hasImage: false, hasImageArray: false)
     }
     
- 
+    
     
     
     static public func showOverlay(options: [ROverlayOptions]){
         ROverlay.showOverlay(status: "", options: options)
-    }
-    static public func showOverlay(status: String,fontColor: UIColor, iconColor: UIColor,options: [ROverlayOptions]){
-        OVERLAY_ACTIVITY_SQUARE_COLOR = iconColor
-        OVERLAY_LABEL_FONT_COLOR = fontColor
-        shared.didSetOverlayLabelFont = false
-        shared.didSetOverlayLabelText = false
-        shared.overlayText = status
-        shared.analyzeOptions(options: options, hasImage: false, hasImageArray: false)
     }
     static public func showOverlay(status: String, options: [ROverlayOptions]){
         shared.didSetOverlayLabelFont = false
@@ -446,13 +359,13 @@ class ROverlay: UIView {
     static public func hideOverlay() {
         shared.overlayHide(finishedClosure: nil)
     }
-//    static public func hideOverlayWithClosure(){
-//        if shared.completionClosure != nil {
-//            shared.overlayHide(finishedClosure: shared.completionClosure)
-//        }else{
-//            shared.overlayHide(finishedClosure: nil)
-//        }
-//    }
+    static public func hideOverlayWithClosure(){
+        if shared.completionClosure != nil {
+            shared.overlayHide(finishedClosure: shared.completionClosure)
+        }else{
+            shared.overlayHide(finishedClosure: nil)
+        }
+    }
     static public func hideOverlay(_ finished: @escaping ((Bool)->(Void))){
         shared.overlayHide(finishedClosure: finished)
     }
@@ -533,7 +446,7 @@ class ROverlay: UIView {
             self.showBackgroud = false
         }
         
-        if optionPresent(options: options, value: .ROverlayOptionAllowUserInteraction) {
+        if !optionPresent(options: options, value: .ROverlayOptionAllowUserInteraction) {
             self.interaction = false
             self.userDismissSwipe = false
             self.userDismissTap = false
@@ -568,9 +481,9 @@ class ROverlay: UIView {
         if self.overlayFont == nil {
             self.overlayFont = OVERLAY_LABEL_FONT
         }
-//        if self.overlayFontColor == nil {
+        if self.overlayFontColor == nil {
             self.overlayFontColor = OVERLAY_LABEL_FONT_COLOR
-//        }
+        }
         if self.overlayBackgroundColor == nil {
             self.overlayBackgroundColor = OVERLAY_BACKGROUND_COLOR
         }
@@ -635,7 +548,7 @@ class ROverlay: UIView {
             icon?.lineWidth = 0.0
             icon?.strokeEnd = 0.0
             CATransaction.commit()
-            icon?.path = bezierPathOfExcalmationSymbol(rect: CGRect.init(x: 0, y: 0, width: 40, height: 40), scale: 0.5, thick: OVERLAY_ICON_THICKNESS).cgPath
+            icon?.path = bezierPathOfCheckSymbol(rect: CGRect.init(x: 0, y: 0, width: 40, height: 40), scale: 0.5, thick: OVERLAY_ICON_THICKNESS).cgPath
             icon?.fillColor = overlayIconColor?.cgColor
             icon?.borderColor = overlayIconColor?.cgColor
             image?.removeFromSuperview()
@@ -1020,36 +933,19 @@ class ROverlay: UIView {
             CATransaction.commit()
         case .tOverlaySizeRoundedRect:
             overlay?.layer.cornerRadius = 10
+            overlayWidth = 100
             overlayHeight = 100
-            if (self.icon == nil && self.spinner == nil && self.image == nil  && self.overlayText != "") {
-                overlayWidth = UIScreen.main.bounds.width
-                if label?.text != nil {
-                    labelRect = (label?.text?.boundingRect(with: CGSize.init(width: overlayWidth - 2.0 * LABEL_PADDING_X, height: ifIsThenValue(ifValue: 667.0, isValue: 300.0, thenValue: UIScreen.main.bounds.size.height)), options:  [NSStringDrawingOptions.usesFontLeading, .usesLineFragmentOrigin, .truncatesLastVisibleLine], attributes: [NSFontAttributeName: label!.font], context: nil))!;
-                    overlayHeight = (labelRect.size.height + 8) > (UIScreen.main.bounds.size.height - 2.0 * LABEL_PADDING_X) ? (UIScreen.main.bounds.size.height - 2.0 * LABEL_PADDING_X) : (labelRect.size.height + 8)
-                    labelRect.origin.x = overlayWidth/2.0 - labelRect.size.width/2.0
-                    
-                    if self.overlayType == TOverlayType.tOverlayTypeText {
-                        labelRect = CGRect.init(x: labelRect.origin.x, y: labelRect.origin.x, width: labelRect.size.width, height: overlayHeight - 2.0 * labelRect.origin.x)
-                    }else{
-                        labelRect.origin.y = LABEL_PADDING_Y
-                    }
-                }
-            }else{
-                overlayWidth = 100
-                if label?.text != nil {
-                    labelRect = (label?.text?.boundingRect(with: CGSize.init(width: overlayWidth - 2.0 * LABEL_PADDING_X, height: ifIsThenValue(ifValue: 667.0, isValue: 300.0, thenValue: UIScreen.main.bounds.size.height)), options:  [NSStringDrawingOptions.usesFontLeading, .usesLineFragmentOrigin, .truncatesLastVisibleLine], attributes: [NSFontAttributeName: label!.font], context: nil))!;
-                    overlayHeight = (labelRect.size.height + 80) > (UIScreen.main.bounds.size.height - 2.0 * LABEL_PADDING_X) ? (UIScreen.main.bounds.size.height - 2.0 * LABEL_PADDING_X) : (labelRect.size.height + 80)
-                    labelRect.origin.x = overlayWidth/2.0 - labelRect.size.width/2.0
-                    
-                    if self.overlayType == TOverlayType.tOverlayTypeText {
-                        labelRect = CGRect.init(x: labelRect.origin.x, y: labelRect.origin.x, width: labelRect.size.width, height: overlayHeight - 2.0 * labelRect.origin.x)
-                    }else{
-                        labelRect.origin.y = LABEL_PADDING_Y
-                    }
+            if label?.text != nil  {
+                labelRect = (label?.text?.boundingRect(with: CGSize.init(width: overlayWidth - 2.0 * LABEL_PADDING_X, height: ifIsThenValue(ifValue: 667.0, isValue: 300.0, thenValue: UIScreen.main.bounds.size.height)), options:  [NSStringDrawingOptions.usesFontLeading, .usesLineFragmentOrigin, .truncatesLastVisibleLine], attributes: [NSFontAttributeName: label!.font], context: nil))!;
+                 overlayHeight = (labelRect.size.height + 80) > (UIScreen.main.bounds.size.height - 2.0 * LABEL_PADDING_X) ? (UIScreen.main.bounds.size.height - 2.0 * LABEL_PADDING_X) : (labelRect.size.height + 80)
+                labelRect.origin.x = overlayWidth/2.0 - labelRect.size.width/2.0
+                
+                if self.overlayType == TOverlayType.tOverlayTypeText {
+                    labelRect = CGRect.init(x: labelRect.origin.x, y: labelRect.origin.x, width: labelRect.size.width, height: overlayHeight - 2.0 * labelRect.origin.x)
+                }else{
+                    labelRect.origin.y = LABEL_PADDING_Y
                 }
             }
-     
- 
             if optionPresent(options: options!, value: ROverlayOptions.ROverlayOptionOverlayAnimateTransistions) {
                 if CGRect.zero.equalTo((overlay?.frame)!){
                     overlay?.bounds = CGRect.init(x: 0, y: 0, width: overlayWidth, height: overlayHeight)
@@ -1061,16 +957,8 @@ class ROverlay: UIView {
                     })
                 }
             }else{
-                if (self.icon == nil && self.spinner == nil && self.image == nil && self.overlayText != "") {
-                    overlayWidth = UIScreen.main.bounds.width
-                    overlay?.bounds = CGRect.init(x: 0, y: 0, width: labelRect.width+8, height: overlayHeight)
-                    label?.frame = labelRect.offsetBy(dx: -(overlayWidth-labelRect.width-8)/2, dy: 0)
-                }else{
-                    overlayWidth = 100
-                    overlay?.bounds = CGRect.init(x: 0, y: 0, width: overlayWidth, height: overlayHeight)
-                    label?.frame = labelRect
-                }
-                
+                overlay?.bounds = CGRect.init(x: 0, y: 0, width: overlayWidth, height: overlayHeight)
+                label?.frame = labelRect
             }
             imagex = overlayWidth/2
             imagey = (label?.text == nil ) ? overlayHeight/2.0 : 36
@@ -1168,21 +1056,13 @@ class ROverlay: UIView {
             self.willHide = true
             let userInfo = self.getUserInfo()
             NotificationCenter.default.post(name: Notification.Name(rawValue: ROverlayWillDisappearNotification), object: nil, userInfo: userInfo)
+            
             UIView.animate(withDuration: ANIMATION_DURATION, delay: 0, options:  [UIViewAnimationOptions.allowUserInteraction, UIViewAnimationOptions.curveEaseIn], animations: {
                 self.overlay?.transform = self.overlay!.transform.scaledBy(x: SCALE_TO, y: SCALE_TO)
                 self.overlay?.alpha = 0
             }, completion: { (finished) in
                 self.overlayDestroy()
                 self.alpha = 0
-                self.didSetOverlayIconColor = false
-                self.didSetOverlayLabelFont = false
-                self.didSetOverlayLabelText = false
-                
-                OVERLAY_LABEL_FONT_COLOR = UIColor.lightGray
-                OVERLAY_ACTIVITY_DEFAULT_COLOR = UIColor.lightGray
-                OVERLAY_ACTIVITY_LEAF_COLOR = UIColor.lightGray
-                OVERLAY_ACTIVITY_BLUR_COLOR = UIColor.lightGray
-                OVERLAY_ACTIVITY_SQUARE_COLOR = UIColor.lightGray
                 UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: ROverlayDidDisappearNotification), object: nil, userInfo: userInfo)
                 if let closure = finishedClosure {
